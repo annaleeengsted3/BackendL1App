@@ -1,0 +1,23 @@
+﻿@addTagHelper"*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Time Calculator</title>
+</head>
+<body>
+    <h1>Time Calculator</h1>
+    <form method ="post" asp-controller="TimeCalculator" asp-action="Index">
+    <div><labelfor ="Hours">Hours:</label><br /><inputtype ="text" name="Hours" /></div>
+    <div><labelfor ="Hours">Minutes:</label><br /><inputtype ="text" name="Minutes" /></div>
+    <div><labelfor ="Hours">Seconds:</label><br /><inputtype ="text" name="Seconds" /></div>
+    <div><inputtype ="submit" value="Calculate time"></div>
+    </form>
+</body>
+</html>
